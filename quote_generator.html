@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daily Quote Generator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="quote_generator.css">
+ 
+</head>
+<body>
+
+  <div class="container">
+    <h1>🌟 Daily Dose of Wisdom</h1>
+    <div id="quote">Loading quote...</div>
+    <div id="author"></div>
+    <div class="buttons">
+      <button class="new-btn" onclick="showNewQuote()">New Quote</button>
+      <button class="save-btn" onclick="toggleFavorite()">Save Quote</button>
+    </div>
+    <button class="toggle-favorites-btn" onclick="toggleFavorites()">Show Favorites</button>
+    <div class="favorites-section" id="favoritesSection">
+      <h3>⭐ Favorite Quotes:</h3>
+      <div id="favoritesList"></div>
+    </div>
+  </div>
+<script src="quote_generator.js"></script>
+</body>
+</html>
